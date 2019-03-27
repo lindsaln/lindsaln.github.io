@@ -1,0 +1,225 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+$font-family: 'Quicksand', sans-serif;
+$primary-color: #dea6af;
+$num-pages: 6;
+
+html {
+    height: 100%;
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    //height: (100% * $num-pages); // Pages * 100
+    margin:0px;
+    padding:0px;
+}
+
+.homepage {
+    z-index: 1;
+    top: 0;
+    background: linear-gradient(to top, unquote('#aa4b6bad'), unquote('#6b6b83c5'), unquote('#3b8c99ab')), url("../images/mountain.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepage .intro h2 {
+    font-family: $font-family;
+    font-size: 8em;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+    margin-top:0; 
+    margin-bottom: 0px;
+    padding-bottom: 0px; 
+}
+
+.homepage .intro p {
+    margin-top: 5px;
+    font-family: $font-family;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+
+#about-page .content {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: $font-family;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+#about-page .content img {
+    width: 22%;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin-top: 80px;
+}
+
+#about-page .content .description {
+    width: 70%;
+    float: left;
+    padding-right: 40px;
+}
+
+#experience-page {
+    background: #36363c;
+}
+
+.resume {
+    width: 960px;
+    margin: 0 auto;
+    color: white;
+    font-family: $font-family;
+    padding-bottom: 80px;
+}
+
+.resume p {
+    margin-top: 60px;
+    margin-bottom: 16px;
+    font-size: 60px;
+}
+
+.resume h2 {
+    margin-top: 60px;
+    margin-bottom: 16px;
+    font-size: 60px;
+}
+
+#experience-page .experience-col {
+    float: left;
+    width: 50%;
+    padding-bottom: 60px;
+}
+
+#experience-page .experience-col p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#experience-page .skills .skill-col {
+    float: left;
+    width: 50%;
+    padding-bottom: 60px;
+}
+
+#experience-page .skills #skill-programming {
+    padding-bottom: 5px;
+}
+
+#experience-page .skills .skill-col p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #c1d5e4;
+}
+
+#experience-page .skills .skill-col ul {
+    padding-left: 18px;
+}
+
+.page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav {
+    width: 95%;
+    position: fixed;
+    z-index: 2;
+    font-family: $font-family;     
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+nav .logo img {
+    float: left;
+    margin: 0;
+    margin-top: -18px; 
+    margin-right: 20px;
+    width: 50px;
+    background-color: white;
+}
+nav a .linkAnimationB
+{
+    left: 0px;
+    top: 0px;
+}
+
+nav a .linkAnimationA
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+nav a:hover:before, nav a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+nav a .active {
+    opacity: 1;
+    width: 100%;
+}
+
+nav .logo h1 {
+    float: left;
+    margin: 0px -10px;
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    top: 5px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    color: inherit;
+}
+
+.light {
+    color: white;
+}
+
+.dark {
+    background: black;
+}
+
+nav a .linkAnimationB, nav a .linkAnimationA
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    transition: all 0.3s;
+    background: #ffffff;
+}
+
+// Links
+.regular-link {
+    text-decoration: none;
+    color: #0074D9;
+    transition: 0.4s;
+}
+
+.regular-link:hover { 
+    color: #7FDBFF; 
+}
+
+.regular-link:active {
+  color: #007BE6;
+  transition: 0.3s;
+}
